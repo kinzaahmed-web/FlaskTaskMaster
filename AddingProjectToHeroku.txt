@@ -1,0 +1,13 @@
+Adding Your Website to Heroku
+1. To login to Heroku from command line "heroku login"
+2. Installing a dependency: pip3 install gunicorn
+3. Freezing requirements: pip3 freeze > requirements.txt
+4. Add a Procfile that tells Heroku what to do with these files: touch Procfile
+	-> inside that file: web: gunicorn app:app 
+5. Initialize an empty git repository: git init 
+6. Add files to the repo: git add . (. will add all files in that directory)
+7. To commit: git commit -m "Your Message"
+8. Create your application name: heroku create flaskintroductionproject
+9. git remote -v
+10. git push heroku master
+11. It should produce a URL 
